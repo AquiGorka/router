@@ -1,4 +1,4 @@
-#Router
+# Router
 Singleton to show/hide `modules` (https://github.com/aquigorka/module)
 
 *Parameters:*
@@ -6,7 +6,7 @@ This router gets/sets parameters from/to document.location.hash
 This router does not handle document.location.hash event changes, you should do so in your own app and then take appropriate action (probably route to some module)
 
 
-##Usage
+## Usage
  - set some modules:
 
         router.init([
@@ -21,7 +21,7 @@ This router does not handle document.location.hash event changes, you should do 
  - then route to some module via id
 	    router.routeToModuleId('module-id-1');
 
-###api
+### api
 
 **router.init(modules: Array)**
 
@@ -59,6 +59,6 @@ if this method is called then the routerRequest flag will be set to true and set
     return true if the moudle id belongs to an existing module
 
 
-###build
+### build
 
     browserify src/router.js --standalone router > dist/router.js
